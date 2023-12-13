@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9d0582e9.css",
+    "main.js": "/static/js/main.2c9e80bb.js",
+    "static/js/787.a5ffd1a1.chunk.js": "/static/js/787.a5ffd1a1.chunk.js",
+    "static/media/Mask-Group-199resize-1.png": "/static/media/Mask-Group-199resize-1.709a6e9e464a36ae700c.png",
+    "static/media/find-great-teammates.webp": "/static/media/find-great-teammates.9b1b0a709b210d6152a1.webp",
+    "index.html": "/index.html",
+    "static/media/even-feel-icon.webp": "/static/media/even-feel-icon.fb2921f371463e1dbe23.webp",
+    "main.9d0582e9.css.map": "/static/css/main.9d0582e9.css.map",
+    "main.2c9e80bb.js.map": "/static/js/main.2c9e80bb.js.map",
+    "787.a5ffd1a1.chunk.js.map": "/static/js/787.a5ffd1a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d0582e9.css",
+    "static/js/main.2c9e80bb.js"
+  ]
+}

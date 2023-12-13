@@ -1,0 +1,90 @@
+.testiContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.containerRevers{
+    flex-direction: row-reverse;
+}
+
+.testidivider {
+    width: 49%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testtiHeading {
+    width: 100%;
+    height: auto;
+}
+
+.testtiHeading h1 {
+    letter-spacing: -0.025rem;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin: 0;
+    color: #000;
+
+}
+
+.testtiHeading p {
+    font-size: 17px;
+    letter-spacing: -0.025rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.testiButton {
+    border: none;
+    box-shadow: 1px 1px .4rem #6b6b6b;
+    width: 150px;
+    background-color: #e9fc53;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: -0.025rem;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.testiButton:hover {
+    background-color: #000;
+    color: #e9fc53;
+}
+
+
+.testiImage {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.testiImage img {
+    width: 100%;
+}
+
+
+@media screen and (max-width:900px) {
+    .testiImage {
+        align-items: center;
+        display: flex;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .testidivider {
+        width: 100%;
+    }
+
+    .testtiHeading {
+        text-align: center;
+    }
+
+}

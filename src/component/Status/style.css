@@ -1,0 +1,95 @@
+.statusContaier {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+.statusImg {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+}
+
+.statusImg img {
+    width: 100%;
+}
+
+.statusHead {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+}
+
+.statusHead h1 {
+    margin: 0;
+    font-size: 1.7rem;
+    letter-spacing: -0.025rem;
+    color: #000;
+}
+
+.statusHead p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.025rem;
+    color: #000;
+}
+
+.StatusBtn {
+    width: 100%;
+    max-width: 250px;
+    border: none;
+    box-shadow: 1px 1px .4rem #6b6b6b;
+    background-color: #e9fc53;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: -0.025rem;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.StatusBtn:hover {
+    background-color: #000;
+    color: #e9fc53;
+}
+
+
+
+.statusBandContaier {
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.StatusBandIcon {
+    width: 70px;
+    height: 70px;
+}
+
+.StatusBandIcon img {
+    width: 100%;
+}
+
+.StatusBandHeading {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.StatusBandHeading h1 {
+    font-size: 17px;
+    letter-spacing: -0.025rem;
+    color: #000;
+    margin: 10px;
+}

@@ -1,0 +1,101 @@
+.telContainer {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.teldivider {
+    width: 49%;
+    height: auto;
+}
+
+.telFirstPart {
+    width: 60%;
+    margin: 10px auto;
+    height: auto;
+}
+
+.telSecondPart {
+    width: 70%;
+    margin: 10px auto 10px 20px;
+    height: auto;
+}
+
+.telHeading {
+    width: 100%;
+    height: auto;
+}
+
+.telHeading h1 {
+    letter-spacing: -0.025rem;
+    font-size: 1.7rem;
+    color: #fff;
+    line-height: 1;
+}
+
+.telHeading p {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: -0.025rem;
+    line-height: 2;
+}
+
+.telHeadingSecond {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.telHeadingSecond h1 {
+    letter-spacing: -0.025rem;
+    font-size: 2.5rem;
+    color: #fff;
+    line-height: 1;
+    border-bottom: 3px solid #e9fc53;
+}
+
+.telPoints {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+
+
+}
+
+.telIcon {
+    width: 40px;
+    height: 40px;
+}
+
+.telIcon img {
+    width: 100%;
+}
+
+.telIconPoint {
+    width: 70%;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.telIconPoint p {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+@media screen and (max-width:770px) {
+    .teldivider{
+        width: 100%;
+        justify-content: center;
+    }
+    .telSecondPart{
+        margin: 10px auto;
+    }
+}

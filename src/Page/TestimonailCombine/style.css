@@ -1,0 +1,8 @@
+.MainTestimonailContainer {
+    width: 100%;
+    height: auto;
+    background-color: #f3eee7;
+    background-image: url("../../assets/Mask-Group-199resize-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}

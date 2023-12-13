@@ -1,0 +1,38 @@
+.navHead {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navlogo {
+    width: 200px;
+    height: auto;
+}
+
+.navLink {
+    width: 70%;
+    height: auto;
+}
+
+.navItems {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navItems li {
+    letter-spacing: -0.025rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navItems li:hover {
+    color: #e9fc53;
+}
