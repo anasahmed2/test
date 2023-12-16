@@ -55,3 +55,49 @@ export const StatusBandDetail = [
         heading: "Grow Your Business"
     },
 ]
+export const StatusBandProjectDetail = [
+    {
+        image: "https://rocketstation.com/wp-content/uploads/elementor/thumbs/FOX-prbfhzzd7czbw2mg8gp6oymmeqw2nzn35a4lmwtrh8.png",
+        color: true
+    },
+    {
+        image: "https://rocketstation.com/wp-content/uploads/elementor/thumbs/SERVPROLogo_Current-prbf4tavc0xj0zry89il7seuf5vpouan00oea6dkki.png",
+        color: true
+    },
+    {
+        image: "https://rocketstation.com/wp-content/uploads/elementor/thumbs/Oxi_Fresh_Logo-scaled-prbfarm2m92wk34ngu5j0abxv0jeftxfthf3p9jt78.jpeg",
+        color: true
+    },
+    {
+        image: "https://rocketstation.com/wp-content/uploads/elementor/thumbs/pestnation-llc-logo-large-prbf969x1cwevvfxrndaa6stmie0ealt9lmhfdwtqi.png",
+        color: true
+    },
+    {
+        image: "https://rocketstation.com/wp-content/uploads/elementor/thumbs/Home-Inspections-prbfg4azjaeoo5cr7ng1pfpfn05n9s6evz5n2zm3k6.png",
+        color: true
+    },
+    {
+        image: "https://rocketstation.com/wp-content/uploads/elementor/thumbs/Steadily-logo-prbf4mq006oirq1iaoo78c2m9gs56ykin43zx8nbi2.png",
+        color: true
+    },
+]
+
+
+export const ProjectMandata = [
+    {
+        image: "https://rocketstation.com/wp-content/uploads/2022/07/real-estate-agents.png",
+        field: "Real Estate     Investors"
+    },
+    {
+        image: 'https://rocketstation.com/wp-content/uploads/2022/08/Mask-Group-43.png',
+         field: "Property Management"
+    },
+    {
+        image: 'https://rocketstation.com/wp-content/uploads/2022/08/real-estate-agent.png',
+         field: "Brokers & Agents"
+    },
+    {
+        image: 'https://rocketstation.com/wp-content/uploads/2022/08/Mask-Group-115.png',
+         field: "Home Service Providers"
+    },
+]

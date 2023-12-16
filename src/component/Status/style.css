@@ -72,9 +72,16 @@
     margin: 10px;
 }
 
+.statusBandContaiers {
+    padding: 10px !important;
+}
+
 .StatusBandIcon {
     width: 70px;
     height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .StatusBandIcon img {

@@ -2,15 +2,15 @@ import React from 'react'
 import "./style.css"
 import IconImg from "../../assets/find-great-teammates.webp"
 
-function StatusBand({image,heading }) {
+function StatusBand({ image, heading ,color}) {
     return (
-        <div className='statusBandContaier'>
+        <div className={`statusBandContaier ${color && "statusBandContaiers"}`}>
             <div className='StatusBandIcon'>
                 <img src={image} alt="" />
             </div>
-            <div className='StatusBandHeading'>
+            {heading && <div className='StatusBandHeading'>
                 <h1>{heading}</h1>
-            </div>
+            </div>}
         </div>
     )
 }

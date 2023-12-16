@@ -3,12 +3,13 @@
     height: 100vh;
 }
 
-.HeroMin{
+.HeroMin {
     width: 100%;
     height: 600px;
     background-size: 100% 100%;
     background-image: url("https://img.freepik.com/premium-photo/laptop-campus-technology-friendship-friends-group-online-talking-computer-lifestyle-people-outdoors_163305-207634.jpg?w=1060");
 }
+
 .statusCantainer {
     width: 100%;
     height: auto;
@@ -40,7 +41,7 @@
     width: 100%;
     height: 200px;
     background-color: #fff;
-    display: grid; 
+    display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
@@ -56,4 +57,60 @@
 
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
+}
+
+.carouselMain {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://rocketstation.com/wp-content/uploads/2022/08/Mask-Group-161-1.png");
+}
+
+.carouselHeading {
+    width: fit-content;
+    height: auto;
+    margin: 50px 50px 50px auto
+}
+
+.carouselHeading h1 {
+    color: #000;
+    text-shadow: 1px 1px .2rem#f3eee7;
+
+}
+
+.bg-yellow {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    background-color: #e9fc53 !important;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.projectmangHeading {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-left: 20px;
+    margin-top: 100px;
+    margin-bottom: 260px;
+}
+
+.projectmangHeading h1 {
+    color: #f3eee7;
+    font-size: 2.3rem;
+    letter-spacing: -0.025rem;
+    text-shadow: 1px 1px .2rem#000;
+}
+
+.ProjectManImg {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -250px;
+    flex-wrap: wrap;
 }
