@@ -34,6 +34,7 @@
     font-size: 1.7rem;
     color: #fff;
     line-height: 1;
+    text-shadow: 1px 1px .4rem #0c1921;
 }
 
 .telHeading p {
@@ -41,6 +42,8 @@
     font-weight: 600;
     letter-spacing: -0.025rem;
     line-height: 2;
+    text-shadow: 1px 1px .4rem #0c1921;
+
 }
 
 .telHeadingSecond {
@@ -53,6 +56,8 @@
     letter-spacing: -0.025rem;
     font-size: 2.5rem;
     color: #fff;
+    text-shadow: 1px 1px .4rem #0c1921;
+
     line-height: 1;
     border-bottom: 3px solid #e9fc53;
 }
@@ -88,6 +93,9 @@
     font-size: 17px;
     font-weight: 600;
     line-height: 2;
+    color: #fff;
+    text-shadow: 1px 1px .4rem #0c1921;
+
 }
 
 @media screen and (max-width:770px) {

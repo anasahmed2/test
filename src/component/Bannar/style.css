@@ -1,0 +1,50 @@
+.bannadContainer {
+    width: 100%;
+    background: #00000071;
+    height: auto;
+}
+
+.bannarHeading {
+    width: 100%;
+    max-width: 690px;
+    height: auto;
+    padding: 100px;
+    text-align: center;
+
+    margin: 0 auto;
+}
+
+.bannarHeading h1 {
+    font-size: 2.5rem;
+    letter-spacing: -0.025rem;
+    line-height: 1.3;
+
+}
+
+
+.bannarHeading button {
+    width: 200px;
+    border-radius: 30px;
+    padding: 15px;
+    height: auto;
+    box-shadow: 1px 1px .5rem #8e8e8e;
+    background: #e9fc53;
+}
+
+.bannarHeading button:hover {
+    background-color: #000;
+
+}
+
+.textStartBtn1 {
+    margin: 0 !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    letter-spacing: -0.025rem;
+    color: #000 !important;
+}
+
+
+.bannarHeading button:hover .textStartBtn1 {
+    color: #e9fc53 !important;
+}

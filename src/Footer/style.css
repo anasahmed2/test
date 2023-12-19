@@ -1,0 +1,142 @@
+.footerContainer {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.footerLogo {
+    width: 100%;
+    height: auto;
+
+    margin: 30px auto;
+    text-align: center;
+}
+
+.footerBody {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerLinksContainer {
+    width: 18%;
+    padding: 5px;
+    margin: 10px;
+    height: auto;
+
+}
+
+.footerLinksContainers {
+    width: 18%;
+    padding: 5px;
+    margin: 10px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerListItems {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footerListItems li {
+    background: #000;
+    margin: 10px auto;
+    font-size: 14px;
+    letter-spacing: -0.025rem;
+    padding-left: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footerListHeading {
+    font-size: 18px !important;
+    letter-spacing: -0.025rem;
+    font-weight: bold !important;
+    cursor: text !important;
+}
+
+.listHover:hover {
+    color: #e9fc53;
+}
+
+.footerimg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerRoundCirlcle {
+    width: 100px;
+    height: 100px;
+    animation: animate 2.5s linear infinite;
+}
+
+@keyframes animate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.footerRoundCirlcle img {
+    width: 100%;
+    height: 100%;
+}
+
+.copyRight{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-top: 30px;
+    /* background-color: red; */
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.copyRighttext{
+    width: fit-content;
+}
+
+.copyRighttext p{
+    width: fit-content;
+    font-weight: 600;
+    letter-spacing: -0.025rem;
+    font-size: 17px;
+}
+
+.copyRightHeading{
+    font-size: 20px!important;
+    font-weight: bold!important;
+}
+
+.copyRigthYellow{
+    color: #e9fc53;
+}
+
+@media screen and (max-width:900px) {
+    .footerLinksContainers,.footerLinksContainer {
+        width: 22%;
+    }
+}
+
+@media screen and (max-width:750px) {
+  .copyRighttext,  .copyRighttext p ,.footerLinksContainers,.footerLinksContainer {
+        width: 100%;
+        text-align: center;
+    }
+}

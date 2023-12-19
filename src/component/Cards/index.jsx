@@ -12,5 +12,16 @@ function ProjectmanCard({image, field}) {
         </div>
     )
 }
+function SimpleProcess({image, title, description }) {
+    return (
+        <div className='SimpleProcess'>
+           <img src={image} alt="" />
+           <div className='SimpleProcessDetail'>
+            <h1>{title}</h1>
+            <p>{description}</p>
+           </div>
+        </div>
+    )
+}
 
-export { ProjectmanCard }
+export { ProjectmanCard,SimpleProcess }

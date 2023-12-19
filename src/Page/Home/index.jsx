@@ -3,9 +3,13 @@ import "./style.css"
 import MainTesttimonial from '../TestimonailCombine'
 import Hero from '../../component/Hero'
 import ResponsiveAppBar from '../../component/Navbar'
-import { StatusBandDetail, StatusData, StatusBandProjectDetail, ProjectMandata } from '../../Data'
+import { StatusBandDetail, StatusData, StatusBandProjectDetail, ProjectMandata, SimpleProject } from '../../Data'
 import { Status, StatusBand } from '../../component/Status'
-import { ProjectmanCard } from '../../component/Cards'
+import { ProjectmanCard, SimpleProcess } from '../../component/Cards'
+import { Button } from '@mui/material'
+import GuideHire from '../../component/GuideHire'
+import Bannar from '../../component/Bannar/index.'
+import Footer from '../../Footer'
 
 function Home() {
   return (
@@ -38,8 +42,33 @@ function Home() {
       </div>
 
       <div className='ProjectManImg'>
-        {ProjectMandata.map((value, index)=> <ProjectmanCard key={index} {...value}/>)}
-        
+        {ProjectMandata.map((value, index) => <ProjectmanCard key={index} {...value} />)}
+      </div>
+      <div className='simpleProcess'>
+        <div className='statusHeadingMain'>
+          <h1>3 Things You Can Count On</h1>
+        </div>
+        <div className='simpleCardShow'>
+          {SimpleProject.map((value, index) => <SimpleProcess {...value} key={index} />)}
+        </div>
+      </div>
+
+      <div className='GetStartBtn'>
+        <Button><p className='textStartBtn'>Get Start Here</p></Button>
+      </div>
+      <div className='GetStartBtn'>
+        <div className='resultBand'>
+          <h1>GREAT PROCESS + GREAT PEOPLE = GREAT RESULTS</h1>
+        </div>
+      </div>
+      <div className='GetStartBtn'>
+        <GuideHire />
+      </div>
+      <div className='bannarSection'>
+        <Bannar />
+      </div>
+      <div className='footerMain'>
+        <Footer />
       </div>
     </div>
   )

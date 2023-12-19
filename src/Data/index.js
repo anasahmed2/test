@@ -90,14 +90,33 @@ export const ProjectMandata = [
     },
     {
         image: 'https://rocketstation.com/wp-content/uploads/2022/08/Mask-Group-43.png',
-         field: "Property Management"
+        field: "Property Management"
     },
     {
         image: 'https://rocketstation.com/wp-content/uploads/2022/08/real-estate-agent.png',
-         field: "Brokers & Agents"
+        field: "Brokers & Agents"
     },
     {
         image: 'https://rocketstation.com/wp-content/uploads/2022/08/Mask-Group-115.png',
-         field: "Home Service Providers"
+        field: "Home Service Providers"
     },
+]
+
+export const SimpleProject = [
+    {
+        image: "https://rocketstation.com/wp-content/uploads/2022/08/discover.png",
+        title: "DISCOVER",
+        description:"Schedule your discovery call, and we’ll help you map all the key processes of your open position."
+    },
+    {
+        image: 'https://rocketstation.com/wp-content/uploads/2022/08/people.png',
+        title: "PEOPLE  ",
+        description:"Once we document your open position, we’re your virtual HR department, connecting you with vetted virtual teammates with the skills and experience you need."
+    },
+    {
+        image: 'https://rocketstation.com/wp-content/uploads/2022/08/results.png',
+        title: "RESULTS",
+        description:"Now that you have the talent, our management support helps onboard and hold your virtual teammate accountable so you don’t have to."
+    },
+
 ]

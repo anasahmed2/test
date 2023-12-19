@@ -45,19 +45,6 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-@media screen and (max-width:850px) {
-    .StatusCard {
-
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media screen and (max-width:600px) {
-    .StatusCard {
-
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-}
 
 .carouselMain {
     width: 100%;
@@ -113,4 +100,99 @@
     justify-content: space-between;
     margin-top: -250px;
     flex-wrap: wrap;
+}
+
+.simpleProcess {
+    width: 100%;
+    height: auto;
+    padding: 100px 0 0;
+}
+
+.simpleCardShow {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.GetStartBtn {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 70px auto;
+}
+
+.GetStartBtn button {
+    width: 340px;
+    border-radius: 30px;
+    padding: 15px;
+    height: auto;
+    box-shadow: 1px 1px .5rem #8e8e8e;
+    background: #e9fc53;
+}
+
+.GetStartBtn button:hover {
+    background-color: #000;
+
+}
+
+.textStartBtn {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: bold !important;
+    letter-spacing: -0.025rem;
+    color: #000;
+}
+
+
+.GetStartBtn button:hover .textStartBtn {
+    color: #e9fc53;
+}
+
+
+.resultBand {
+    max-width: 700px;
+    width: 100%;
+    border-radius: 30px;
+    height: auto;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #000;
+}
+
+.resultBand h1 {
+    letter-spacing: -0.025rem;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.bannarSection {
+    width: 100%;
+    height: auto;
+    background-image: url("https://rocketstation.com/wp-content/uploads/2022/03/Upper-footer-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footerMain{
+    width: 100%;
+    height: auto;
+    background: #000;
+    padding: 10px;
+}
+
+@media screen and (max-width:850px) {
+    .StatusCard {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width:600px) {
+    .StatusCard {
+
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }
