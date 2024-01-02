@@ -31,7 +31,7 @@
 
 .telHeading h1 {
     letter-spacing: -0.025rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: #fff;
     line-height: 1;
     text-shadow: 1px 1px .4rem #0c1921;
@@ -47,7 +47,8 @@
 }
 
 .telHeadingSecond {
-    width: 100%;
+    width: fit-content;
+    padding-right: 10px;
     height: auto;
     margin-bottom: 30px;
 }

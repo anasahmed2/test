@@ -1,10 +1,10 @@
 
 export const TestimonailData = [
     {
-        heading: "Get A Virtual Team To Do Everything You Need Done.",
+        heading: "Discover Exceptional Talent with Home Stream Solutions!",
         points: [
-            { point: "Rocket Station surrounds you with affordable virtual talent who know real estate." },
-            { point: "We’ll process map your open position, bring you a pool of top quality candidates ready to go, and we’ll make sure whoever you choose is prepped for success in any role you put them in." },
+            { point: "Experience the power of our People at Home Stream Solutions – a virtual team dedicated to maximizing your real estate sales potential" },
+            { point: "From lead generation to deal closure, our people understand the nuances of the real estate market, ensuring a seamless sales journey." },
             { point: "Get a virtual team to handle everything you need done, so you can make an even bigger impact on your business." }
         ],
         image: "https://rocketstation.com/wp-content/uploads/2022/08/group-images.png"
@@ -48,7 +48,7 @@ export const StatusBandDetail = [
     },
     {
         image: "https://rocketstation.com/wp-content/uploads/2022/03/get-more-done.png",
-        heading: "Get More Done"
+        heading: "Get more Deals Done"
     },
     {
         image: "https://rocketstation.com/wp-content/uploads/2022/03/grow-your-business.png",
@@ -84,10 +84,10 @@ export const StatusBandProjectDetail = [
 
 
 export const ProjectMandata = [
-    {
-        image: "https://rocketstation.com/wp-content/uploads/2022/07/real-estate-agents.png",
-        field: "Real Estate     Investors"
-    },
+    // {
+    //     image: "https://rocketstation.com/wp-content/uploads/2022/07/real-estate-agents.png",
+    //     field: "Real Estate     Investors"
+    // },
     {
         image: 'https://rocketstation.com/wp-content/uploads/2022/08/Mask-Group-43.png',
         field: "Property Management"
@@ -96,10 +96,10 @@ export const ProjectMandata = [
         image: 'https://rocketstation.com/wp-content/uploads/2022/08/real-estate-agent.png',
         field: "Brokers & Agents"
     },
-    {
-        image: 'https://rocketstation.com/wp-content/uploads/2022/08/Mask-Group-115.png',
-        field: "Home Service Providers"
-    },
+        // {
+        //     image: 'https://rocketstation.com/wp-content/uploads/2022/08/Mask-Group-115.png',
+        //     field: "Home Service Providers"
+        // },
 ]
 
 export const SimpleProject = [

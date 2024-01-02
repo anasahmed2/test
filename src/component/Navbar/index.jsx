@@ -1,3 +1,4 @@
+import "./style.css"
 import React, { useState, useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -12,10 +13,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import "./style.css"
 
 // pages
-const pages = ['hero', 'Project', 'testimonail'];
+const pages = ['Home', 'How it Works', 'Who we serve', 'What we Offer', 'Contact Us'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -27,7 +27,7 @@ function ResponsiveAppBar() {
     const div = document.getElementById("hero")
     const rect = div.getBoundingClientRect().bottom
     let rectRound = Math.round(rect / 27)
-      if (rectRound < 20) {
+    if (rectRound < 20) {
       setBarColor(true)
     }
     else {
@@ -73,7 +73,7 @@ function ResponsiveAppBar() {
         justifyContent: "center",
         alignItems: "center",
         transition: "all .2s ease-in-out",
-        animationDelay:"1s"
+        animationDelay: "1s"
 
       }} position="fixed">
       <Container>
@@ -92,9 +92,10 @@ function ResponsiveAppBar() {
               letterSpacing: '-0.025rem',
               color: 'inherit',
               textDecoration: 'none',
+              fontSize: '20px'
             }}
           >
-            Rocket Station
+            Home Stream Solutions
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -127,8 +128,19 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem sx={{ backgroundColor: "black" }} key={page} onClick={handleCloseNavMenu}>
+                  <Typography
+                    sx={{
+                      backgroundColor: "Black", color: "#ffff",
+                      fontFamily: 'monospace',
+                      fontWeight: 500,
+                      letterSpacing: '-0.025rem',
+                      textDecoration: 'none',
+                      fontSize: '17px'
+                    }}
+                    textAlign="center">
+                    {page}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -150,7 +162,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            Rocket Station
+            Home Stream Solutions
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "center" }}>
             {pages.map((page) => (

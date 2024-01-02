@@ -36,7 +36,7 @@ function Home() {
             {StatusBandProjectDetail.map((value, index) => <StatusBand key={index} {...value} />)}
           </div>
           <div className='projectmangHeading'>
-            <h1>Real Estate is our Specialty</h1>
+            <h1>We Collaborate with:</h1>
           </div>
         </div>
       </div>
