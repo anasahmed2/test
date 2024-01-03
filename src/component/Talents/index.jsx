@@ -1,15 +1,14 @@
-import React from 'react'
 import "./style.css"
-import Arrow from "../../assets/even-feel-icon.webp"
+import React from 'react'
+import Arrow from "../../assets/even-feel-icon.png"
 function Talent() {
     return (
         <div className='telContainer'>
             <div className='teldivider'>
                 <div className='telFirstPart'>
-
                     <div className='telHeading'>
                         <h1>What if you could supercharge your real estate sales without the hassle of
-                            managing every detail?</h1>
+                            managing every detail ?</h1>
                     </div>
                     <div className='telHeading'>
                         <p>Picture having a dedicated team handling everything from lead
@@ -25,28 +24,29 @@ function Talent() {
             <div className='teldivider'>
                 <div className='telSecondPart'>
                     <div className='telHeadingSecond'>
-                        <h1>Our Vision</h1>
+                        <h1>Our Vision<span className="blue-dot">.</span></h1>
                     </div>
 
                     <div className='telPoints'>
                         <div className='telIcon'>
-                            <img src={Arrow} alt="" /></div>
+                            <img src={Arrow} alt="" />
+                        </div>
                         <div className='telIconPoint'>
-
                             <p>Long Term Collaboration with Real Estate Business</p>
                         </div>
-                    </div>  <div className='telPoints'>
+                    </div>
+                    <div className='telPoints'>
                         <div className='telIcon'>
-                            <img src={Arrow} alt="" /></div>
+                            <img src={Arrow} alt="" />
+                        </div>
                         <div className='telIconPoint'>
-
                             <p>Ensure Profitability and Growth</p>
                         </div>
                     </div>  <div className='telPoints'>
                         <div className='telIcon'>
-                            <img src={Arrow} alt="" /></div>
+                            <img src={Arrow} alt="" />
+                        </div>
                         <div className='telIconPoint'>
-
                             <p>Brand Building and Marketing</p>
                         </div>
                     </div>

@@ -2,8 +2,9 @@
     background: transparent!important;
     
 }
-.bg-black{
-    background: #000!important;
+.bg-Nav{
+    background: #00000071!important;
+    backdrop-filter: blur(20px)!important;
 }
 
 .MuiList-root{

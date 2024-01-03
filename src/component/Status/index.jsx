@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.css"
-import IconImg from "../../assets/find-great-teammates.webp"
+// import IconImg from "../../assets/find-great-teammates.webp"
 
 function StatusBand({ image, heading ,color}) {
     return (

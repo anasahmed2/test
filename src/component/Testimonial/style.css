@@ -4,7 +4,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    background-color: #111;
 }
 .containerRevers{
     flex-direction: row-reverse;
@@ -25,44 +26,45 @@
 }
 
 .testtiHeading h1 {
-    letter-spacing: -0.025rem;
-    font-size: 2.5rem;
+    letter-spacing: -0.03rem;
+    font-size: 2.3rem;
     line-height: 1;
     margin: 0;
-    color: #000;
+    color: #ebecf3;
 
 }
 
 .testtiHeading p {
-    font-size: 17px;
+    font-size: 15px;
     letter-spacing: -0.025rem;
-    color: #000;
-    font-weight: 600;
+    color: #ebecf3;
+    font-weight: 400;
 }
 
 .testiButton {
     border: none;
-    box-shadow: 1px 1px .4rem #6b6b6b;
-    width: 150px;
-    background-color: #e9fc53;
+    box-shadow: 1px 1px .4rem #717171;
+    width: 230px;
+    background-color: #007aff;
     color: #000;
     font-size: 18px;
     letter-spacing: -0.025rem;
     font-weight: 700;
-    padding: 15px;
+    padding: 12px;
     border-radius: 30px;
     cursor: pointer;
 }
 
 .testiButton:hover {
     background-color: #000;
-    color: #e9fc53;
+    color: #007aff;
 }
 
 
 .testiImage {
     width: 100%;
     height: auto;
+    background: #000;
     padding: 5px;
 }
 

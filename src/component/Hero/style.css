@@ -25,12 +25,11 @@
     letter-spacing: -0.025rem;
     line-height: 1.2;
     margin: 0;
+    text-shadow: 1px 1px .6rem #000;
+
 }
 
-.YellowText {
-    font-style: italic;
-    color: #e9fc53;
-}
+
 
 .heroDetail {
     width: 70%;
@@ -42,6 +41,7 @@
 
 
 .heroDetail p {
+    text-shadow: 1px 1px .6rem #000;
     font-size: 20px;
     letter-spacing: -0.04rem;
     line-height: 1.2;
@@ -57,14 +57,14 @@
     width: 250px;
     padding: 15px;
     color: #000;
-    background-color: #e9fc53;
-    box-shadow: 1px 1px .9rem #8d8d8d;
+    background-color: #007aff;
+    box-shadow: 1px 1px .5  rem #000;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: -0.025rem;
 }
 
 .btnHero:hover{
-    color:#e9fc53 ;
+    color:#007aff ;
     background-color: #000;
 }

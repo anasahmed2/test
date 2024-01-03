@@ -1,7 +1,7 @@
 .telContainer {
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 50px 10px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -30,19 +30,23 @@
 }
 
 .telHeading h1 {
-    letter-spacing: -0.025rem;
+    letter-spacing: -0.04rem;
     font-size: 1.5rem;
-    color: #fff;
+    font-weight: 600;
+    color: #ebecf3;
     line-height: 1;
-    text-shadow: 1px 1px .4rem #0c1921;
+    text-shadow: 1px 1px .8rem #000;
 }
 
 .telHeading p {
-    color: #fff;
-    font-weight: 600;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ebecf3;
+    font-weight: 400;
     letter-spacing: -0.025rem;
-    line-height: 2;
-    text-shadow: 1px 1px .4rem #0c1921;
+    /* line-height: 2; */
+    text-shadow: 1px 1px .8rem #000;
 
 }
 
@@ -50,17 +54,20 @@
     width: fit-content;
     padding-right: 10px;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    border-bottom: 4px solid #007aff;
+    margin-left: 10px;
+
 }
 
 .telHeadingSecond h1 {
     letter-spacing: -0.025rem;
     font-size: 2.5rem;
-    color: #fff;
-    text-shadow: 1px 1px .4rem #0c1921;
-
+    color: #ebecf3;
+    text-shadow: 1px 1px .8rem #000;
+    margin: 0;
+    margin-bottom: 5px;
     line-height: 1;
-    border-bottom: 3px solid #e9fc53;
 }
 
 .telPoints {
@@ -74,12 +81,17 @@
 }
 
 .telIcon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #007aff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .telIcon img {
-    width: 100%;
+    width: 50%;
 }
 
 .telIconPoint {
@@ -87,24 +99,25 @@
     height: auto;
     margin-left: 20px;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .telIconPoint p {
     margin: 0;
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 2;
-    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ebecf3;
     text-shadow: 1px 1px .4rem #0c1921;
 
 }
 
 @media screen and (max-width:770px) {
-    .teldivider{
+    .teldivider {
         width: 100%;
         justify-content: center;
     }
-    .telSecondPart{
+
+    .telSecondPart {
         margin: 10px auto;
     }
 }

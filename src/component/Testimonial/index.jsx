@@ -24,6 +24,7 @@ function Testimonial({ heading, points, image, revers }) {
             </div>
             <div className='testidivider'>
                 <div className='testiImage'>
+                    <div></div>
                     <img src={image} alt="gorup" />
                 </div>
             </div>

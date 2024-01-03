@@ -5,7 +5,7 @@ function Hero() {
         <div className='heroContainer'>
             <div className='heroMain'>
                 <div className='heroHeading'>
-                    <h1> Unlock Profitable Growth with <span className='YellowText'> Real Estate</span>  Virtual Sales Teams</h1>
+                    <h1> Unlock Profitable Growth with <span className='blue-text'> Real Estate</span>  Virtual Sales Teams<span className='blue-text'>.</span></h1>
                 </div>
                 <div className='heroDetail'>
                     <p>Home Stream Solutions secures expert virtual sales teams for you. Accelerate

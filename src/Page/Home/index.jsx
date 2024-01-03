@@ -1,15 +1,16 @@
-import React from 'react'
 import "./style.css"
+import React from 'react'
 import MainTesttimonial from '../TestimonailCombine'
 import Hero from '../../component/Hero'
 import ResponsiveAppBar from '../../component/Navbar'
-import { StatusBandDetail, StatusData, StatusBandProjectDetail, ProjectMandata, SimpleProject } from '../../Data'
+import { StatusBandDetail, StatusData, StatusBandProjectDetail, ProjectMandata, SimpleProject, TestimonailData } from '../../Data'
 import { Status, StatusBand } from '../../component/Status'
 import { ProjectmanCard, SimpleProcess } from '../../component/Cards'
 import { Button } from '@mui/material'
 import GuideHire from '../../component/GuideHire'
 import Bannar from '../../component/Bannar/index.'
 import Footer from '../../Footer'
+import Testimonial from "../../component/Testimonial"
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
         {StatusBandDetail.map((value, index) => <StatusBand key={index} {...value} />)}
       </div>
       <MainTesttimonial />
+      {TestimonailData.map((value, index)=><Testimonial key={index} {...value}/>)}
       <div className='statusCantainer'>
         <div className='statusHeadingMain'>
           <h1>3 Things You Can Count On</h1>

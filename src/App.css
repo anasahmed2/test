@@ -1,0 +1,10 @@
+.blue-text {
+    color: #007aff!important;
+    text-shadow: 1px 1px .6rem #000!important;
+}
+
+.blue-dot {
+    color: #007aff!important;
+    text-shadow: 1px 1px .6rem #000!important;
+    font-size: 2.5rem;
+}

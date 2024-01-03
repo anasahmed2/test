@@ -7,13 +7,13 @@
     width: 100%;
     height: 600px;
     background-size: 100% 100%;
-    background-image: url("https://img.freepik.com/premium-photo/laptop-campus-technology-friendship-friends-group-online-talking-computer-lifestyle-people-outdoors_163305-207634.jpg?w=1060");
+    background-image: url("../../assets/HeroBg");
 }
 
 .statusCantainer {
     width: 100%;
     height: auto;
-    background-color: #f3eee7;
+    background-color: #111;
 
 }
 
@@ -26,7 +26,7 @@
 .statusHeadingMain h1 {
     font-size: 2.5rem;
     letter-spacing: -0.025rem;
-    color: #000;
+    color: #ebecf3;
     margin: 0px;
 }
 
@@ -39,8 +39,8 @@
 
 .statusBand {
     width: 100%;
-    height: 200px;
-    background-color: #fff;
+    height: 250px;
+    background-color: #111;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -49,7 +49,7 @@
 .carouselMain {
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding:30px 10px;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("https://rocketstation.com/wp-content/uploads/2022/08/Mask-Group-161-1.png");

@@ -1,3 +1,8 @@
+import firstIcon from "../assets/find-great-teammates.png"
+import secondIcon from "../assets/get-more-Deals-Done.png"
+import thirdIcon from "../assets/grow-Your-Business.png"
+
+
 
 export const TestimonailData = [
     {
@@ -43,15 +48,15 @@ export const StatusData = [
 
 export const StatusBandDetail = [
     {
-        image: "https://rocketstation.com/wp-content/uploads/2022/03/find-great-teammates.png",
+        image: firstIcon,
         heading: "Find Great Teammates"
     },
     {
-        image: "https://rocketstation.com/wp-content/uploads/2022/03/get-more-done.png",
+        image: secondIcon,
         heading: "Get more Deals Done"
     },
     {
-        image: "https://rocketstation.com/wp-content/uploads/2022/03/grow-your-business.png",
+        image: thirdIcon,
         heading: "Grow Your Business"
     },
 ]

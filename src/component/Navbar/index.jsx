@@ -66,7 +66,7 @@ function ResponsiveAppBar() {
   return (
 
     <AppBar
-      className={`${barColor ? "bg-black" : "bg-tarns"}`}
+      className={`${barColor ? "bg-Nav" : "bg-tarns"}`}
       sx={{
         minHeight: '100px',
         display: "flex",

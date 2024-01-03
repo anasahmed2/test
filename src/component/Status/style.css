@@ -14,6 +14,7 @@
 }
 
 .statusImg img {
+    filter: invert(1) ;
     width: 100%;
 }
 
@@ -28,7 +29,7 @@
     margin: 0;
     font-size: 1.7rem;
     letter-spacing: -0.025rem;
-    color: #000;
+    color: #ebecf3;
 }
 
 .statusHead p {
@@ -36,7 +37,7 @@
     font-size: 15px;
     font-weight: 600;
     letter-spacing: -0.025rem;
-    color: #000;
+    color: #ebecf3;
 }
 
 .StatusBtn {
@@ -44,7 +45,7 @@
     max-width: 250px;
     border: none;
     box-shadow: 1px 1px .4rem #6b6b6b;
-    background-color: #e9fc53;
+    background-color: #007aff;
     color: #000;
     font-size: 18px;
     letter-spacing: -0.025rem;
@@ -57,7 +58,7 @@
 
 .StatusBtn:hover {
     background-color: #000;
-    color: #e9fc53;
+    color: #007aff;
 }
 
 
@@ -69,7 +70,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin:35px 20px;
+    background: #262626; 
+    border-radius: 10px   ;
+    cursor: pointer;
+}
+
+.statusBandContaier:hover{
+transform: scale(1.06);
 }
 
 .statusBandContaiers {
@@ -77,14 +85,18 @@
 }
 
 .StatusBandIcon {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: #007aff; */
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .StatusBandIcon img {
+    filter: invert(1) brightness(0.8);
     width: 100%;
 }
 
@@ -95,8 +107,11 @@
 }
 
 .StatusBandHeading h1 {
+    filter:brightness(0.8);
+
     font-size: 17px;
     letter-spacing: -0.025rem;
-    color: #000;
+    font-weight: 500;
+    color: #ebecf3;
     margin: 10px;
 }
