@@ -13,8 +13,7 @@ function Bannar() {
                 <h1 data-aos="zoom-out" data-aos-easing="ease-in"
                     data-aos-duration="500"><span className="blue-text">Virtual Teammates</span>
                     To Fuel Your <span className="blue-text"> Success</span>.</h1>
-                <Button data-aos="zoom-out" data-aos-easing="ease-in"
-                    data-aos-duration="500"><p className='textStartBtn1'> Find One Now</p></Button>
+                
             </div>
         </div>
     )

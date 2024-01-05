@@ -30,7 +30,20 @@ function ResponsiveAppBar() {
   const [anchorElUser, setAnchorElUser] = useState(null);
   const [active, setActive] = useState("home")
 
- 
+  const handleNavColor = () => {
+    const div = document.getElementById("hero")
+    const rect = div.getBoundingClientRect().bottom
+    let rectRound = Math.round(rect / 27)
+    if (rectRound < 20) {
+      setBarColor(true)
+    }
+    else {
+      setBarColor(false)
+
+    }
+
+  }
+
   const handleScroll = () => {
     // Calculate the index of the active div based on scroll position
     // You may need to customize this logic based on your layout
@@ -53,7 +66,9 @@ function ResponsiveAppBar() {
   // Attach the scroll event listener when the component mounts
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleNavColor)
     return () => {
+      window.removeEventListener("scroll", handleNavColor);
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);

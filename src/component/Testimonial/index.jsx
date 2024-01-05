@@ -19,9 +19,7 @@ function Testimonial({ heading, points, image, revers }) {
                     {points.map((value, index) => <p data-aos="fade"  data-aos-duration="500" data-aos-easing="ease-in" key={index}>{value.point}</p>
                     )}
                 </div>
-                <div className='testtiHeading'>
-                    <button data-aos="fade"  data-aos-duration="500" data-aos-easing="ease-in" className='testiButton'>Hire AVA</button>
-                </div>
+               
             </div>
             <div className='testidivider'>
                 <div className='testiImage'>

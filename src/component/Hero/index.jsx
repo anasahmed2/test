@@ -27,13 +27,7 @@ function Hero() {
                     <p>Home Stream Solutions secures expert virtual sales teams for you. Accelerate
                         profits effortlessly, with no additional costs</p>
                 </div>
-                <div className='heroDetail'
-                    data-aos="fade-right"
-                    data-aos-easing="ease-in-sine"
-                    data-aos-delay="300"
-                    data-aos-offset="0">
-                    <button className='btnHero'>Need to be removed!</button>
-                </div>
+                
             </div>
         </div>
     )

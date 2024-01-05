@@ -30,7 +30,7 @@ function Home() {
       {TestimonailData.map((value, index) => <Testimonial key={index} {...value} />)}
       <div className='statusCantainer'>
         <div className='statusHeadingMain'>
-          <h1 data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in">3 Things You Can Count On<span className="blue-dot">.</span></h1>
+          <h1 data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in">What We Have Offer<span className="blue-dot">.</span></h1>
           <div className="bottom-line" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in"></div>
         </div>
         <div className='StatusCard'>
@@ -39,7 +39,7 @@ function Home() {
         </div>
         <div className='carouselMain'>
           <div className='carouselHeading'>
-            <h1 data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in">Proudly Partnering With Companies Like <span className="blue-dot">...</span></h1>
+            <h1 data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in">Proudly Collaborating With Companies Like <span className="blue-dot">...</span></h1>
             <div className="under-line" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in"></div>
           </div>
 
@@ -61,7 +61,7 @@ function Home() {
       <div className='GetStartBtn'>
         <div className='resultBand' data-aos="flip-down" data-aos-easing="ease-in"
           data-aos-duration="500">
-          <h1>Efficient Process <span className="blue-text">+</span> The Right People <span className="blue-text">=</span> GREAT RESULTS</h1>
+          <h1>Efficient Process <span className="blue-text">+</span> The Right People <span className="blue-text">=</span> Accelerated Profits</h1>
         </div>
       </div>
 

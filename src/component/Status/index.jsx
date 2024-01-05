@@ -36,9 +36,7 @@ function Status({ heading, detail, btnValue, image }) {
             <div className='statusHead' data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in">
                 <p>{detail}</p>
             </div>
-            <div className='statusHead' data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in"   >
-                <button className='StatusBtn'>{btnValue}</button>
-            </div>
+           
 
         </div>
     )
