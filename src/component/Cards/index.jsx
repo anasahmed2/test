@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./style.css"
+import 'aos/dist/aos.css';
+import Aos from 'aos';
+
 function ProjectmanCard({image, field}) {
+    useEffect(()=>{
+        Aos.init()
+    },[])
     return (
-        <div className='proCardContainer'>
+        <div className='proCardContainer' data-aos="zoom-out" data-aos-easing="linear"
+        data-aos-duration="1500" >
             <div className='proImg'>
                 <img src={image} alt="" />
             </div>
@@ -12,16 +19,6 @@ function ProjectmanCard({image, field}) {
         </div>
     )
 }
-function SimpleProcess({image, title, description }) {
-    return (
-        <div className='SimpleProcess'>
-           <img src={image} alt="" />
-           <div className='SimpleProcessDetail'>
-            <h1>{title}</h1>
-            <p>{description}</p>
-           </div>
-        </div>
-    )
-}
 
-export { ProjectmanCard,SimpleProcess }
+
+export { ProjectmanCard }

@@ -1,33 +1,19 @@
 import React from "react";
 import "./style.css";
 
-function Carousel({ items, element }) {
-  const carouselmap= [items]
+function Carousel({ StatusBandProjectDetail }) {
+
   return (
     <div className="carouselContainer">
       <div>
-        {carouselmap?.length > 0 &&
-          carouselmap.map((item, index) => 
-              <img
-                key={`clientLogo-${index}`}
-                alt={item.alt || "carousel image"}
-                src={item.image}
-              />
-             )
-          }
+        {StatusBandProjectDetail.map((value, index) =>
+          <img key={index} src={value.image} alt="" />
+        )}
       </div>
       <div>
-        {carouselmap?.length > 0 &&
-          carouselmap.map((item, index) => {
-            console.log(item.image)
-            return (
-              <img
-                key={`clientLogo-${index}`}
-                alt={item.alt || "carousel image"}
-                src={item.image}
-              />
-             );
-          })} 
+        {StatusBandProjectDetail.map((value, index) =>
+          <img key={index} src={value.image} alt="" />
+        )}
       </div>
     </div>
   );

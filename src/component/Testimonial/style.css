@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* margin-top: 20px; */
     background-color: #111;
 }
 .containerRevers{
@@ -64,12 +63,20 @@
 .testiImage {
     width: 100%;
     height: auto;
-    background: #000;
     padding: 5px;
 }
 
 .testiImage img {
     width: 100%;
+}
+
+.borderLines{
+    width: 100%;
+    max-width: 1050px;
+    height: 1px;
+    background-color: #ebecf3;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 
@@ -89,4 +96,29 @@
         text-align: center;
     }
 
+}
+
+@media screen and (max-width:500px) {
+    .testtiHeading h1{
+        font-size: 1.8rem;
+    }
+
+    .testtiHeading p{
+        font-size: 12px;
+    }
+
+    .testiButton{
+        margin:10px ;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .testtiHeading h1{
+        font-size: 1.5rem;
+    }
+
+    .testtiHeading p{
+        font-size: 10px;
+    }
 }

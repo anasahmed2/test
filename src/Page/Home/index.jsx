@@ -1,44 +1,56 @@
 import "./style.css"
-import React from 'react'
+import React, { useEffect } from 'react'
+import 'aos/dist/aos.css';
+import Aos from 'aos';
 import MainTesttimonial from '../TestimonailCombine'
 import Hero from '../../component/Hero'
 import ResponsiveAppBar from '../../component/Navbar'
 import { StatusBandDetail, StatusData, StatusBandProjectDetail, ProjectMandata, SimpleProject, TestimonailData } from '../../Data'
 import { Status, StatusBand } from '../../component/Status'
-import { ProjectmanCard, SimpleProcess } from '../../component/Cards'
-import { Button } from '@mui/material'
-import GuideHire from '../../component/GuideHire'
+import { ProjectmanCard } from '../../component/Cards'
 import Bannar from '../../component/Bannar/index.'
 import Footer from '../../Footer'
 import Testimonial from "../../component/Testimonial"
+import Carousel from "../../component/Carousel"
 
 function Home() {
+  useEffect(() => {
+    Aos.init()
+  }, [])
   return (
     <div className='main'>
       <ResponsiveAppBar />
-      <div className='HeroMin' id='hero'>
+      <div className='HeroMin scroll-div' id='hero'>
         <Hero />
       </div>
       <div className='statusBand'>
         {StatusBandDetail.map((value, index) => <StatusBand key={index} {...value} />)}
       </div>
       <MainTesttimonial />
-      {TestimonailData.map((value, index)=><Testimonial key={index} {...value}/>)}
+      {TestimonailData.map((value, index) => <Testimonial key={index} {...value} />)}
       <div className='statusCantainer'>
         <div className='statusHeadingMain'>
-          <h1>3 Things You Can Count On</h1>
+          <h1 data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in">3 Things You Can Count On<span className="blue-dot">.</span></h1>
+          <div className="bottom-line" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in"></div>
         </div>
         <div className='StatusCard'>
           {StatusData.map((value, index) => <Status key={index} {...value} />)}
 
         </div>
         <div className='carouselMain'>
-          <div className='carouselHeading'><h1>Proudly Partnering With Companies Like...</h1></div>
-          <div className={`statusBand ${StatusBandProjectDetail && "bg-yellow"}`}>
-            {StatusBandProjectDetail.map((value, index) => <StatusBand key={index} {...value} />)}
+          <div className='carouselHeading'>
+            <h1 data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in">Proudly Partnering With Companies Like <span className="blue-dot">...</span></h1>
+            <div className="under-line" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in"></div>
           </div>
+
+          <div className="carousalMain">
+            <Carousel StatusBandProjectDetail={StatusBandProjectDetail} />
+          </div>
+
           <div className='projectmangHeading'>
-            <h1>We Collaborate with:</h1>
+            <h1 data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in">We Collaborate with<span className="blue-dot">:</span></h1>
+            <div className="under-line" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in"></div>
+
           </div>
         </div>
       </div>
@@ -46,26 +58,13 @@ function Home() {
       <div className='ProjectManImg'>
         {ProjectMandata.map((value, index) => <ProjectmanCard key={index} {...value} />)}
       </div>
-      <div className='simpleProcess'>
-        <div className='statusHeadingMain'>
-          <h1>3 Things You Can Count On</h1>
-        </div>
-        <div className='simpleCardShow'>
-          {SimpleProject.map((value, index) => <SimpleProcess {...value} key={index} />)}
+      <div className='GetStartBtn'>
+        <div className='resultBand' data-aos="flip-down" data-aos-easing="ease-in"
+          data-aos-duration="500">
+          <h1>Efficient Process <span className="blue-text">+</span> The Right People <span className="blue-text">=</span> GREAT RESULTS</h1>
         </div>
       </div>
 
-      <div className='GetStartBtn'>
-        <Button><p className='textStartBtn'>Get Start Here</p></Button>
-      </div>
-      <div className='GetStartBtn'>
-        <div className='resultBand'>
-          <h1>GREAT PROCESS + GREAT PEOPLE = GREAT RESULTS</h1>
-        </div>
-      </div>
-      <div className='GetStartBtn'>
-        <GuideHire />
-      </div>
       <div className='bannarSection'>
         <Bannar />
       </div>

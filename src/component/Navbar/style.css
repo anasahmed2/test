@@ -1,12 +1,41 @@
-.bg-tarns{
-    background: transparent!important;
-    
-}
-.bg-Nav{
-    background: #00000071!important;
-    backdrop-filter: blur(20px)!important;
+.bg-tarns {
+    background: transparent !important;
+
 }
 
-.MuiList-root{
-    background-color: #000!important;
+.bg-Nav {
+    background: #00000071 !important;
+    backdrop-filter: blur(20px) !important;
+}
+
+.MuiList-root {
+    background-color: #000 !important;
+}
+
+.navLogo {
+    width: 100px;
+    filter: invert(1);
+}
+
+.midLogo {
+    width: 100%;
+    height: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.midLogo img {
+    width: 100px;
+    filter: invert(1);
+}
+
+@media screen and (max-width:900px) {
+    .midLogo {
+        display: flex;
+    }
+
+    .navLogo {
+        display: none;
+    }
 }

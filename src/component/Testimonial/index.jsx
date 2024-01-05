@@ -1,31 +1,32 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./style.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Aos from 'aos';
+
 function Testimonial({ heading, points, image, revers }) {
+    useEffect(() => {
+        Aos.init()
+    }, [])
     return (
         <div className={` testiContainer ${revers && 'containerRevers'}`}>
             <div className='testidivider'>
                 <div className='testtiHeading'>
-                    <h1>{heading}</h1>
+                    <h1  data-aos="fade"  data-aos-duration="500" data-aos-easing="ease-in">{heading} <span className="blue-text">!</span></h1>
+                    <div className='borderLines' data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in"></div>
                 </div>
-                <div className='testtiHeading'>
-                    {points.map((value, index) => <p key={index}>{value.point}</p>
+                <div className='testtiHeading' >
+                    {points.map((value, index) => <p data-aos="fade"  data-aos-duration="500" data-aos-easing="ease-in" key={index}>{value.point}</p>
                     )}
-                    {/* <p>Rocket Station surrounds you with affordable virtual talent who know real estate.
-                    </p>
-                    <p>We’ll process map your open position, bring you a pool of top quality candidates ready to go, and we’ll make sure whoever you choose is prepped for success in any role you put them in.
-                    </p>
-                    <p>
-                        Get a virtual team to handle everything you need done, so you can make an even bigger impact on your business.
-                    </p> */}
                 </div>
                 <div className='testtiHeading'>
-                    <button className='testiButton'>Hire AVA</button>
+                    <button data-aos="fade"  data-aos-duration="500" data-aos-easing="ease-in" className='testiButton'>Hire AVA</button>
                 </div>
             </div>
             <div className='testidivider'>
                 <div className='testiImage'>
-                    <div></div>
-                    <img src={image} alt="gorup" />
+                   
+                    <img src={image} alt="gorup" data-aos="fade-left"  data-aos-duration="1000" data-aos-easing="ease-in-out" />
                 </div>
             </div>
         </div>

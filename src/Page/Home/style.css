@@ -1,198 +1,282 @@
     .main {
-    width: 100%;
-    height: 100vh;
-}
-
-.HeroMin {
-    width: 100%;
-    height: 600px;
-    background-size: 100% 100%;
-    background-image: url("../../assets/HeroBg");
-}
-
-.statusCantainer {
-    width: 100%;
-    height: auto;
-    background-color: #111;
-
-}
-
-.statusHeadingMain {
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
-
-.statusHeadingMain h1 {
-    font-size: 2.5rem;
-    letter-spacing: -0.025rem;
-    color: #ebecf3;
-    margin: 0px;
-}
-
-.StatusCard {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.statusBand {
-    width: 100%;
-    height: 250px;
-    background-color: #111;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-
-.carouselMain {
-    width: 100%;
-    height: auto;
-    padding:30px 10px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("https://rocketstation.com/wp-content/uploads/2022/08/Mask-Group-161-1.png");
-}
-
-.carouselHeading {
-    width: fit-content;
-    height: auto;
-    margin: 50px 50px 50px auto
-}
-
-.carouselHeading h1 {
-    color: #000;
-    text-shadow: 1px 1px .2rem#f3eee7;
-
-}
-
-.bg-yellow {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    background-color: #e9fc53 !important;
-    height: 100px;
-    margin-bottom: 50px;
-}
-
-.projectmangHeading {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    padding-left: 20px;
-    margin-top: 100px;
-    margin-bottom: 260px;
-}
-
-.projectmangHeading h1 {
-    color: #f3eee7;
-    font-size: 2.3rem;
-    letter-spacing: -0.025rem;
-    text-shadow: 1px 1px .2rem#000;
-}
-
-.ProjectManImg {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    margin-top: -250px;
-    flex-wrap: wrap;
-}
-
-.simpleProcess {
-    width: 100%;
-    height: auto;
-    padding: 100px 0 0;
-}
-
-.simpleCardShow {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.GetStartBtn {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    margin: 70px auto;
-}
-
-.GetStartBtn button {
-    width: 340px;
-    border-radius: 30px;
-    padding: 15px;
-    height: auto;
-    box-shadow: 1px 1px .5rem #8e8e8e;
-    background: #e9fc53;
-}
-
-.GetStartBtn button:hover {
-    background-color: #000;
-
-}
-
-.textStartBtn {
-    margin: 0;
-    font-size: 1.4rem;
-    font-weight: bold !important;
-    letter-spacing: -0.025rem;
-    color: #000;
-}
-
-
-.GetStartBtn button:hover .textStartBtn {
-    color: #e9fc53;
-}
-
-
-.resultBand {
-    max-width: 700px;
-    width: 100%;
-    border-radius: 30px;
-    height: auto;
-    padding: 10px;
-    margin: 10px auto;
-    background-color: #000;
-}
-
-.resultBand h1 {
-    letter-spacing: -0.025rem;
-    font-size: 1.6rem;
-    margin: 0;
-}
-
-.bannarSection {
-    width: 100%;
-    height: auto;
-    background-image: url("https://rocketstation.com/wp-content/uploads/2022/03/Upper-footer-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.footerMain{
-    width: 100%;
-    height: auto;
-    background: #000;
-    padding: 10px;
-}
-
-@media screen and (max-width:850px) {
-    .StatusCard {
-
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        height: 100vh;
+        background: red;
     }
-}
 
-@media screen and (max-width:600px) {
-    .StatusCard {
-
-        grid-template-columns: repeat(1, minmax(0, 1fr));
+    .HeroMin {
+        width: 100%;
+        height: 600px;
+        background-size: 100% 100%;
+        background-image: url("../../assets/HeroBg");
     }
-}
+
+    .statusCantainer {
+        width: 100%;
+        height: auto;
+        background-color: #111;
+
+    }
+
+    .statusHeadingMain {
+        width: fit-content;
+        margin: 0 auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .statusHeadingMain h1 {
+        font-size: 2.5rem;
+        letter-spacing: -0.025rem;
+        color: #ebecf3;
+        margin: 0px;
+    }
+
+    .StatusCard {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .statusBand {
+        width: 100%;
+        height: auto;
+        background-color: #111;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+
+    .carouselMain {
+        width: 100%;
+        height: auto;
+        padding: 30px 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-image: url("https://rocketstation.com/wp-content/uploads/2022/08/Mask-Group-161-1.png"); */
+    }
+
+    .carouselHeading {
+        width: fit-content;
+        height: auto;
+        margin: 50px 50px 50px auto
+    }
+
+    .carouselHeading h1 {
+        color: #ebecf3;
+        font-size: 2.3rem;
+        margin: 0;
+        letter-spacing: -0.03rem;
+        /* text-shadow: 1px 1px .2rem#f3eee7; */
+
+    }
+
+    .bg-yellow {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        background-color: #e9fc53 !important;
+        height: 100px;
+        margin-bottom: 50px;
+    }
+
+    .projectmangHeading {
+        width: fit-content;
+        height: auto;
+        padding: 10px;
+        padding-left: 20px;
+    }
+
+    .projectmangHeading h1 {
+        color: #f3eee7;
+        font-size: 2.3rem;
+        margin: 0;
+        letter-spacing: -0.025rem;
+        text-shadow: 1px 1px .2rem#000;
+    }
+
+    .ProjectManImg {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .simpleProcess {
+        width: 100%;
+        height: auto;
+        padding: 100px 0 0;
+    }
+
+    .simpleCardShow {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .GetStartBtn {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 70px auto;
+    }
+
+    .GetStartBtn button {
+        width: 340px;
+        border-radius: 30px;
+        padding: 15px;
+        height: auto;
+        box-shadow: 1px 1px .5rem #8e8e8e;
+        background: #e9fc53;
+    }
+
+    .GetStartBtn button:hover {
+        background-color: #000;
+
+    }
+
+    .textStartBtn {
+        margin: 0;
+        font-size: 1.4rem;
+        font-weight: bold !important;
+        letter-spacing: -0.025rem;
+        color: #000;
+    }
+
+
+    .GetStartBtn button:hover .textStartBtn {
+        color: #e9fc53;
+    }
+
+
+    .resultBand {
+        width: fit-content;
+        border-radius: 30px;
+        height: auto;
+        padding: 10px 20px;
+        margin: 10px auto;
+        background-color: #000;
+        box-shadow: 1px 1px .4rem #4c4c4c;
+    }
+
+    .resultBand h1 {
+        letter-spacing: -0.025rem;
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
+    .bannarSection {
+        width: 100%;
+        height: auto;
+        background-image: url("https://rocketstation.com/wp-content/uploads/2022/03/Upper-footer-background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .footerMain {
+        width: 100%;
+        height: auto;
+        background: #000;
+        padding: 10px;
+    }
+
+    .bottom-line {
+        width: 100%;
+        max-width: 500px;
+        height: 2px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background: #ebecf3;
+
+    }
+
+    .under-line {
+        width: 100%;
+        height: 2px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background: #ebecf3;
+    }
+
+    .carousalMain {
+        width: 100%;
+        height: auto;
+        background-color: rebeccapurple;
+        /* padding: 10px; */
+        position: relative;
+    }
+
+
+
+    @media screen and (max-width:850px) {
+
+        .statusBand,
+        .StatusCard {
+
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .statusHeadingMain h1 {
+            font-size: 2rem;
+        }
+
+        .carouselHeading{
+            margin: 0 auto;
+        }
+        .carouselHeading h1{
+            text-align: center;
+            font-size:1.5rem ;
+        }
+        .projectmangHeading{
+            margin: 0 auto;
+        }
+        .projectmangHeading h1{
+            font-size:2rem ;
+            text-align: center;
+        }
+
+        .resultBand h1{
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+
+        .statusBand,
+        .StatusCard {
+
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+    }
+
+    @media screen and (max-width:550px) {
+        .HeroMin{
+            height: 500px;
+        }
+        
+        .statusHeadingMain h1 {
+            font-size: 1.5rem;
+        }
+        .carouselHeading h1{
+            font-size:1.3rem ;
+        }
+    }
+    @media screen and (max-width:450px) {
+        .HeroMin{
+            height: 450px;
+        }
+        .projectmangHeading h1{
+            font-size:1.65rem ;
+           
+        }
+        .resultBand h1{
+            font-size: .75rem;
+        }
+    }

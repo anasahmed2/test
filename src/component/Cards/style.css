@@ -28,8 +28,7 @@
     line-height: 1;
     text-align: center;
     margin: 0;
-    color: #000;
-    text-shadow: 1px 1px 2rem #f3eeef;
+    color: #ebecf3;
 }
 
 .SimpleProcess {
@@ -64,7 +63,7 @@
     margin: 0;
     margin-bottom: 10px;
     letter-spacing: -0.025rem;
-    color: #e9fc53;
+    color: #007aff;
 }
 .SimpleProcessDetail p {
     text-align: center;

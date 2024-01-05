@@ -14,7 +14,7 @@
 }
 
 .statusImg img {
-    filter: invert(1) ;
+    filter: invert(1);
     width: 100%;
 }
 
@@ -23,6 +23,7 @@
     margin: 0 auto;
     height: auto;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .statusHead h1 {
@@ -35,7 +36,7 @@
 .statusHead p {
     margin: 0;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 200;
     letter-spacing: -0.025rem;
     color: #ebecf3;
 }
@@ -70,14 +71,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:35px 20px;
-    background: #262626; 
-    border-radius: 10px   ;
+    margin: 35px 20px;
+    background: #262626;
+    border-radius: 10px;
     cursor: pointer;
 }
 
-.statusBandContaier:hover{
-transform: scale(1.06);
+.statusBandContaier:hover {
+    transform: scale(1.06);
 }
 
 .statusBandContaiers {
@@ -107,11 +108,18 @@ transform: scale(1.06);
 }
 
 .StatusBandHeading h1 {
-    filter:brightness(0.8);
+    filter: brightness(0.8);
 
     font-size: 17px;
     letter-spacing: -0.025rem;
     font-weight: 500;
     color: #ebecf3;
     margin: 10px;
+}
+
+@media screen and (max-width:450px) {
+    .StatusBtn {
+        margin: 10px;
+        padding: 7px;
+    }
 }

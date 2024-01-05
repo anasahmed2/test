@@ -6,7 +6,7 @@ import thirdIcon from "../assets/grow-Your-Business.png"
 
 export const TestimonailData = [
     {
-        heading: "Discover Exceptional Talent with Home Stream Solutions!",
+        heading: "Discover Exceptional Talent with Home Stream Solutions",
         points: [
             { point: "Experience the power of our People at Home Stream Solutions – a virtual team dedicated to maximizing your real estate sales potential" },
             { point: "From lead generation to deal closure, our people understand the nuances of the real estate market, ensuring a seamless sales journey." },
@@ -14,33 +14,33 @@ export const TestimonailData = [
         ],
         image: "https://rocketstation.com/wp-content/uploads/2022/08/group-images.png"
     },
-    {
-        heading: "Out-Of-This World Process.",
-        points: [
-            { point: "We’ll process map your open position, give you top quality candidates ready to go, and we’ll make sure whoever you choose is prepped for success in any role you put them in." },
-            { point: "Get a virtual team to handle everything you need done, so you can make an even bigger impact on your business." }
-        ],
-        image: "https://rocketstation.com/wp-content/uploads/2022/08/world-class-img.png",
-        revers: true
-    }
+        // {
+        //     heading: "Out-Of-This World Process.",
+        //     points: [
+        //         { point: "We’ll process map your open position, give you top quality candidates ready to go, and we’ll make sure whoever you choose is prepped for success in any role you put them in." },
+        //         { point: "Get a virtual team to handle everything you need done, so you can make an even bigger impact on your business." }
+        //     ],
+        //     image: "https://rocketstation.com/wp-content/uploads/2022/08/world-class-img.png",
+        //     revers: true
+        // }
 ]
 
 export const StatusData = [
     {
         heading: "Efficient Process",
-        detail: 'We work with you to define success for your open position, creating custom process documents to train and onboard your VA, giving them the structure they need to succeed.',
+        detail: 'Navigate seamlessly. Our streamlined process guides clients through every phase, ensuring successful deal closures',
         btnValue: 'See The Process',
         image: "https://rocketstation.com/wp-content/uploads/2022/03/account_tree_black_24dp.png",
     },
     {
         heading: "The Right People",
-        detail: 'World-class professionals and real estate trained teammates dedicated to your success. They take things off your plate so you can focus on doing more of what you do best',
+        detail: 'World-class pros and real estate experts dedicated to your success, lightening your workload',
         btnValue: 'Meet The People',
         image: "https://rocketstation.com/wp-content/uploads/2022/03/2.png",
     },
     {
-        heading: "Affordable Pricing",
-        detail: 'People find our rates for teammates range from “shockingly affordable” to “how quickly can I add even MORE teammates?”. We’re confident you’ll agree. See for yourself…',
+        heading: "Accelerated Profits",
+        detail: 'Seamless collaboration, hassle-free sales. Let us drive your profits and accelerate your business growth',
         btnValue: 'See Our Pricing',
         image: "https://rocketstation.com/wp-content/uploads/2022/03/3.png",
     },

@@ -18,6 +18,7 @@
     font-size: 2.5rem;
     letter-spacing: -0.025rem;
     line-height: 1.3;
+    text-shadow: 1px 1px .4rem #000;
 
 }
 
@@ -28,7 +29,7 @@
     padding: 15px;
     height: auto;
     box-shadow: 1px 1px .5rem #8e8e8e;
-    background: #e9fc53;
+    background: #007aff;
 }
 
 .bannarHeading button:hover {
@@ -46,5 +47,35 @@
 
 
 .bannarHeading button:hover .textStartBtn1 {
-    color: #e9fc53 !important;
+    color: #007aff !important;
+}
+
+@media screen and (max-width:650px) {
+    .bannarHeading{
+        padding: 50px;
+    }
+    .bannarHeading h1{
+        
+        font-size: 1.8rem;
+    }
+
+    .bannarHeading button{
+        padding: 8px;
+    }
+    
+}
+
+@media screen and (max-width:450px) {
+    .bannarHeading{
+        padding:20px;
+    }
+    .bannarHeading h1{
+        
+        font-size: 1.3rem;
+    }
+
+    .bannarHeading button{
+        padding: 5px;
+    }
+    
 }

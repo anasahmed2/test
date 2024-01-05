@@ -1,5 +1,6 @@
 import "./style.css"
 import React, { useState, useEffect } from 'react';
+import logo from "../../assets/logo.png"
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -15,53 +16,70 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
 // pages
-const pages = ['Home', 'How it Works', 'Who we serve', 'What we Offer', 'Contact Us'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['home', 'how it Works', 'Who we serve', 'What we Offer', 'Contact Us'];
+const pagesObj = [
+  { id: "home", name: "home" },
+  { id: 'how-it-Works', name: 'how it Works' },
+  { id: 'Who-we-serve', name: 'Who we serve' },
+  { id: 'What-we-Offer', name: 'What we Offer' },
+  { id: 'Contact Us', name: 'Contact Us' }];
 
 function ResponsiveAppBar() {
   const [barColor, setBarColor] = useState(false)
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [anchorElUser, setAnchorElUser] = useState(null);
+  const [active, setActive] = useState("home")
 
-  const handleNavColor = () => {
-    const div = document.getElementById("hero")
-    const rect = div.getBoundingClientRect().bottom
-    let rectRound = Math.round(rect / 27)
-    if (rectRound < 20) {
-      setBarColor(true)
+ 
+  const handleScroll = () => {
+    // Calculate the index of the active div based on scroll position
+    // You may need to customize this logic based on your layout
+    // const scrollTop = window.scrollY;
+    const divElements = document.querySelectorAll(".scroll-div");
+    let newIndex = 0;
+
+    for (let i = 0; i < divElements.length; i++) {
+      const div = divElements[i];
+      const rect = div.getBoundingClientRect();
+
+      if (rect.top <= window.innerHeight / 2) {
+        newIndex = div.id;
+      }
     }
-    else {
-      setBarColor(false)
+    // setActiveDiv(newIndex);
+  };
 
-    }
-
-  }
-
+  useEffect(() => window.scrollTo(0, 0), []);
+  // Attach the scroll event listener when the component mounts
   useEffect(() => {
-    window.addEventListener("scroll", handleNavColor);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleNavColor);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  // console.log(barColor)
+  // const scrollToDiv = (id) => {
+  //   const element = document.getElementById(id);
+  //   setActiveDiv(id);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
+
 
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+
 
   const handleCloseNavMenu = (page) => {
     setAnchorElNav(null);
+    console.log(page)
+
     // navigater(page)
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
 
   return (
 
@@ -78,26 +96,8 @@ function ResponsiveAppBar() {
       }} position="fixed">
       <Container>
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '-0.025rem',
-              color: 'inherit',
-              textDecoration: 'none',
-              fontSize: '20px'
-            }}
-          >
-            Home Stream Solutions
-          </Typography>
-
+          <img src={logo} data-aos="fade" data-aos-easing="linear"
+            data-aos-duration="1500" className="navLogo" />
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -144,66 +144,22 @@ function ResponsiveAppBar() {
                 </MenuItem>
               ))}
             </Menu>
+            <div className="midLogo">
+              <img src={logo} />
+            </div>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '-0.025rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            Home Stream Solutions
-          </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "center" }}>
-            {pages.map((page) => (
+            {pagesObj.map((page) => (
               <Button
-                key={page}
-                onClick={() => handleCloseNavMenu(page)}
+                data-aos="fade" data-aos-easing="linear"
+                data-aos-duration="1500"
+                key={page.id}
+                onClick={() => handleCloseNavMenu(page.id)}
                 sx={{ my: 2, color: 'white', marginLeft: "20px", marginRight: "20px", display: 'block' }}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
-          </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
           </Box>
         </Toolbar>
       </Container>

@@ -1,61 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./style.css"
+import logo from "../assets/logo.png"
 
 function Footer() {
+  const [yaer, setYaer] = useState(new Date().getFullYear())
   return (
     <div className='footerContainer'>
-      <div className='footerLogo'>
-        <img src="https://rocketstation.com/wp-content/uploads/2022/03/Rocket-Station-logo.png" alt="" />
+      <div className='footerLogo' data-aos="fade" data-aos-easing="ease-in"
+          data-aos-duration="700">
+        <img src={logo} alt="" />
       </div>
       <div className='footerBody'>
-        <div className='footerLinksContainer'>
-          <ul className='footerListItems'>
-            <li className='footerListHeading'>How It Works</li>
-            <li className='listHover'> Process</li>
-            <li className='listHover'>People</li>
-            <li className='listHover'>Pricing</li>
-          </ul>
+        <div className='mediaIcon' data-aos="flip-up" data-aos-easing="ease-in"
+          data-aos-duration="500">
+          <img src="https://i.pinimg.com/originals/63/9b/3d/639b3dafb544d6f061fcddd2d6686ddb.png" alt="" />
         </div>
-        <div className='footerLinksContainer'>
-          <ul className='footerListItems'>
-            <li className='footerListHeading'>Service Areas</li>
-            <li className='listHover'> Property Management</li>
-            <li className='listHover'>Investment</li>
-            <li className='listHover'>Brokers & Agents</li>
-            <li className='listHover'>Service Providers</li>
-          </ul>
+        <div className='mediaIcon' data-aos="flip-up" data-aos-easing="ease-in"
+          data-aos-duration="500">
+          <img src="https://i.pinimg.com/originals/b6/99/1c/b6991c27a36077737c09a40cb31ecdef.jpg" alt="" />
         </div>
 
-        <div className='footerLinksContainer'>
-          <ul className='footerListItems'>
-            <li className='footerListHeading'>Contact Us</li>
-            <li className='listHover'> Contact Us</li>
-            <li className='listHover'>Blog  </li>
-            <li className='listHover'>Podcast</li>
-            <li className='listHover'>Press Releases</li>
-            <li className='listHover'>FAQs    </li>
-            <li className='listHover'>Career  </li>
-          </ul>
+        <div className='mediaIcon' data-aos="flip-up" data-aos-easing="ease-in"
+          data-aos-duration="500">
+          <img className='imgSize' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeIqqJlt6n7p1_vDyuzSngN0jHSntvv0e9sBnBR6JqmQ&s" alt="" />
         </div>
-        <div className='footerLinksContainer'>
-          <ul className='footerListItems'>
-            <li className='footerListHeading'>Follow Us</li>
-            <li className='listHover'> Contact Us</li>
-            <li className='footerListHeading'>Email Us</li>
-            <li className='listHover'>info@rocketstation.com</li>
-          </ul>
-        </div>
-        <div className='footerLinksContainers'>
-          <div className='footerRoundCirlcle'>
-            <img src="https://rocketstation.com/wp-content/uploads/2022/03/Group-576.png" alt="" />
-          </div>
+        <div className='mediaIcon' data-aos="flip-up" data-aos-easing="ease-in"
+          data-aos-duration="500">
+          <img className='imgSize' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6iCi4xN75MQj7bBpZxihQ8rXf6gMbfHMZOvSFcoX1Gg&s" alt="" />
         </div>
       </div>
-      <div className='copyRight'>
-        <div className='copyRighttext'><p className='copyRightHeading'>© 2022 Rocket Station</p></div>
-        <div className='copyRighttext'><p>Privacy Policy</p></div>
-        <div className='copyRighttext'><p>Terms & Conditions</p></div>
-        <div className='copyRighttext'><p>Design by<span className='copyRigthYellow'> Republic Branding Co.</span> | Developed by<span  className='copyRigthYellow'> WiRe Innovation</span></p></div>
+      <div className='copyRight' data-aos="fade-right" data-aos-easing="linear"
+          data-aos-duration="1500">
+        <div className='copyRighttext'><p className='copyRightHeading'>© <span className='blue-text'>{yaer}</span> Home Stream Solutions</p></div>
+
+        <div className='copyRighttext'><p>Developed by. <span className='copyRigthYellow'> AppXamine</span></p></div>
       </div>
     </div>
   )
