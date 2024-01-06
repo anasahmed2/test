@@ -27,7 +27,7 @@ function Talent() {
                     <div className='telHeading'
                         data-aos="fade-up"
                         data-aos-duration="1000">
-                        <p>“Home Stream Solutions transforms the game. Our unique approach
+                        <p>Home Stream Solutions transforms the game. Our unique approach
                             means your real estate business can flourish. We take care of the entire sales process, ensuring
                             a smooth and efficient growth journey for you.</p>
                     </div>

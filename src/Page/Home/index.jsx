@@ -30,7 +30,7 @@ function Home() {
       {TestimonailData.map((value, index) => <Testimonial key={index} {...value} />)}
       <div className='statusCantainer'>
         <div className='statusHeadingMain'>
-          <h1 data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in">What We Have Offer<span className="blue-dot">.</span></h1>
+          <h1 data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in">What We Have to Offer<span className="blue-dot">.</span></h1>
           <div className="bottom-line" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in"></div>
         </div>
         <div className='StatusCard'>
@@ -40,7 +40,7 @@ function Home() {
         <div className='carouselMain'>
           <div className='carouselHeading'>
             <h1 data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in">Proudly Collaborating With Companies Like <span className="blue-dot">...</span></h1>
-            <div className="under-line" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in"></div>
+            <div className="under-line" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in"></div>
           </div>
 
           <div className="carousalMain">

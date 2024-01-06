@@ -5,6 +5,7 @@ import aprive from "../assets/aprive.jpeg"
 import opensPhone from "../assets/opensPhone.jpeg"
 import quich from "../assets/quich.jpeg"
 import aflin from "../assets/aflin.jpeg"
+import AppXamine from "../assets/appxamine.jpeg"
 
 
 
@@ -73,6 +74,10 @@ export const StatusBandProjectDetail = [
     //     image: "https://rocketstation.com/wp-content/uploads/elementor/thumbs/SERVPROLogo_Current-prbf4tavc0xj0zry89il7seuf5vpouan00oea6dkki.png",
     //     color: true
     // },
+    {
+        image: AppXamine,
+        color: true
+    },
     {
         image: aflin,
         color: true

@@ -7,8 +7,14 @@ function Footer() {
   return (
     <div className='footerContainer'>
       <div className='footerLogo' data-aos="fade" data-aos-easing="ease-in"
-          data-aos-duration="700">
+        data-aos-duration="700">
         <img src={logo} alt="" />
+      </div>
+      <div className='footerMail'>
+        <p data-aos="fade" data-aos-easing="ease-in"
+        data-aos-duration="1500">For more details or information, please email us at </p>
+        <h5 data-aos="fade" data-aos-easing="ease-in"
+        data-aos-duration="1500">support@homestreamsolutions.com</h5>
       </div>
       <div className='footerBody'>
         <div className='mediaIcon' data-aos="flip-up" data-aos-easing="ease-in"
@@ -30,7 +36,7 @@ function Footer() {
         </div>
       </div>
       <div className='copyRight' data-aos="fade-right" data-aos-easing="linear"
-          data-aos-duration="1500">
+        data-aos-duration="1500">
         <div className='copyRighttext'><p className='copyRightHeading'>© <span className='blue-text'>{yaer}</span> Home Stream Solutions</p></div>
 
         <div className='copyRighttext'><p>Developed by. <span className='copyRigthYellow'> AppXamine</span></p></div>
