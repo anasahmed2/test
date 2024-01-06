@@ -45,7 +45,7 @@ function Talent() {
                         <div className='telIcon'>
                             <img src={Arrow} alt="" />
                         </div>
-                        <div className='telIconPoint' data-aos="fade-left">
+                        <div className='telIconPoint' data-aos="fade">
                             <p>Long Term Collaboration with Real Estate Business</p>
                         </div>
                     </div>
@@ -53,14 +53,14 @@ function Talent() {
                         <div className='telIcon'>
                             <img src={Arrow} alt="" />
                         </div>
-                        <div className='telIconPoint' data-aos="fade-left">
+                        <div className='telIconPoint' data-aos="fade">
                             <p>Ensure Profitability and Growth</p>
                         </div>
                     </div>  <div className='telPoints'>
                         <div className='telIcon'>
                             <img src={Arrow} alt="" />
                         </div>
-                        <div className='telIconPoint' data-aos="fade-left">
+                        <div className='telIconPoint' data-aos="fade">
                             <p>Brand Building and Marketing</p>
                         </div>
                     </div>

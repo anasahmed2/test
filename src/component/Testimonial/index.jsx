@@ -24,7 +24,7 @@ function Testimonial({ heading, points, image, revers }) {
             <div className='testidivider'>
                 <div className='testiImage'>
                    
-                    <img src={image} alt="gorup" data-aos="fade-left"  data-aos-duration="1000" data-aos-easing="ease-in-out" />
+                    <img src={image} alt="gorup" data-aos="fade"  data-aos-duration="1000" data-aos-easing="ease-in-out" />
                 </div>
             </div>
         </div>
