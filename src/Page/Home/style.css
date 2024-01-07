@@ -214,6 +214,10 @@
         position: relative;
     }
 
+    .mainContact{
+        width: 100%;
+        height: auto;
+    }
 
 
     @media screen and (max-width:850px) {

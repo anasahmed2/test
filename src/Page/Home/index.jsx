@@ -12,6 +12,7 @@ import Bannar from '../../component/Bannar/index.'
 import Footer from '../../Footer'
 import Testimonial from "../../component/Testimonial"
 import Carousel from "../../component/Carousel"
+import ContactUs from "../../component/ContactUsFrom";
 
 function Home() {
   useEffect(() => {
@@ -70,7 +71,9 @@ function Home() {
           <h1>Efficient Process <span className="blue-text">+</span> The Right People <span className="blue-text">=</span> Accelerated Profits</h1>
         </div>
       </div>
-
+      <div className="mainContact">
+        <ContactUs />
+      </div>
       <div className='bannarSection'>
         <Bannar />
       </div>
