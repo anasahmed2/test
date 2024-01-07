@@ -15,12 +15,12 @@ function ContactUs() {
                 <h1>Contact Us</h1>
             </div>
             <div className='inputDivider'>
-                <div className='inputContainer' data-aos="fade-right" data-aos-easing="linear"
+                <div className='inputContainer' data-aos="fade-up" data-aos-easing="linear"
                     data-aos-duration="700">
                     <div className='labal'>First Name :</div>
                     <input type='text' placeholder='First Name' />
                 </div>
-                <div className='inputContainer' data-aos="fade-left" data-aos-easing="linear"
+                <div className='inputContainer' data-aos="fade-up" data-aos-easing="linear"
                     data-aos-duration="700">
                     <div className='labal'>Last Name :</div>
                     <input type='text' placeholder='Last Name' />
@@ -28,12 +28,12 @@ function ContactUs() {
 
             </div>
             <div className='inputDivider'>
-                <div className='inputContainer' data-aos="fade-right" data-aos-easing="linear"
+                <div className='inputContainer' data-aos="fade-up" data-aos-easing="linear"
                     data-aos-duration="700">
                     <div className='labal'> Email Addres :</div>
                     <input type='text' placeholder='Email Addres' />
                 </div>
-                <div className='inputContainer' data-aos="fade-left" data-aos-easing="linear"
+                <div className='inputContainer' data-aos="fade-up" data-aos-easing="linear"
                     data-aos-duration="700">
                     <div className='labal'>Phone Number :</div>
                     <input type='text' placeholder='Phone Number' />
@@ -41,12 +41,12 @@ function ContactUs() {
 
             </div>
             <div className='inputDivider'>
-                <div className='inputContainer' data-aos="fade-right" data-aos-easing="linear"
+                <div className='inputContainer' data-aos="fade-up" data-aos-easing="linear"
                     data-aos-duration="700">
                     <div className='labal'> Texas Real Estate License :</div>
                     <input type='text' placeholder=' Texas Real Estate License' />
                 </div>
-                <div className='inputContainer' data-aos="fade-left" data-aos-easing="linear"
+                <div className='inputContainer' data-aos="fade-up" data-aos-easing="linear"
                     data-aos-duration="700">
                     <div className='labal'>How did you hear about us :</div>
                     <input type='text' placeholder='How did you hear about us' />
