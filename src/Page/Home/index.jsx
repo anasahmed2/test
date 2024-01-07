@@ -20,16 +20,22 @@ function Home() {
   return (
     <div className='main'>
       <ResponsiveAppBar />
+
+
       <div className='HeroMin scroll-div' id='hero'>
         <Hero />
       </div>
       <div className='statusBand'>
         {StatusBandDetail.map((value, index) => <StatusBand key={index} {...value} />)}
       </div>
-      <MainTesttimonial />
+      <div className="scroll-div" id="how-it-Works">
+        <MainTesttimonial />
+      </div>
+
       {TestimonailData.map((value, index) => <Testimonial key={index} {...value} />)}
+
       <div className='statusCantainer'>
-        <div className='statusHeadingMain'>
+        <div className='statusHeadingMain scroll-div' id="what-we-Offer">
           <h1 data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in">What We Have to Offer<span className="blue-dot">.</span></h1>
           <div className="bottom-line" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in"></div>
         </div>
@@ -47,7 +53,7 @@ function Home() {
             <Carousel StatusBandProjectDetail={StatusBandProjectDetail} />
           </div>
 
-          <div className='projectmangHeading'>
+          <div className='projectmangHeading scroll-div' id="who-we-serve">
             <h1 data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in">We Collaborate with<span className="blue-dot">:</span></h1>
             <div className="under-line" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in"></div>
 

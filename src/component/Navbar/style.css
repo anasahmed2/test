@@ -30,6 +30,12 @@
     filter: invert(1);
 }
 
+.activeColor{
+color: #007aff !important;
+font-weight: bold!important;
+border-bottom:2px solid #007aff!important;
+}
+
 @media screen and (max-width:900px) {
     .midLogo {
         display: flex;

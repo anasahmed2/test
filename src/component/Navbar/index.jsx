@@ -14,21 +14,21 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { NavLink } from "react-router-dom";
 
 // pages
 const pages = ['home', 'how it Works', 'Who we serve', 'What we Offer', 'Contact Us'];
 const pagesObj = [
-  { id: "home", name: "home" },
+  { id: "hero", name: "Hero" },
   { id: 'how-it-Works', name: 'how it Works' },
-  { id: 'Who-we-serve', name: 'Who we serve' },
-  { id: 'What-we-Offer', name: 'What we Offer' },
-  { id: 'Contact Us', name: 'Contact Us' }];
+  { id: 'what-we-Offer', name: 'What we Offer' },
+  { id: 'who-we-serve', name: 'Who we serve' },
+  { id: 'contact Us', name: 'Contact Us' }];
 
 function ResponsiveAppBar() {
   const [barColor, setBarColor] = useState(false)
   const [anchorElNav, setAnchorElNav] = useState(null);
-  const [anchorElUser, setAnchorElUser] = useState(null);
-  const [active, setActive] = useState("home")
+  const [active, setActive] = useState("hero")
 
   const handleNavColor = () => {
     const div = document.getElementById("hero")
@@ -50,7 +50,6 @@ function ResponsiveAppBar() {
     // const scrollTop = window.scrollY;
     const divElements = document.querySelectorAll(".scroll-div");
     let newIndex = 0;
-
     for (let i = 0; i < divElements.length; i++) {
       const div = divElements[i];
       const rect = div.getBoundingClientRect();
@@ -59,11 +58,11 @@ function ResponsiveAppBar() {
         newIndex = div.id;
       }
     }
-    // setActiveDiv(newIndex);
+    console.log(newIndex)
+    setActive(newIndex);
   };
 
   useEffect(() => window.scrollTo(0, 0), []);
-  // Attach the scroll event listener when the component mounts
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("scroll", handleNavColor)
@@ -73,16 +72,6 @@ function ResponsiveAppBar() {
     };
   }, []);
 
-  // const scrollToDiv = (id) => {
-  //   const element = document.getElementById(id);
-  //   setActiveDiv(id);
-  //   if (element) {
-  //     element.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
-
-
-
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -90,10 +79,12 @@ function ResponsiveAppBar() {
 
   const handleCloseNavMenu = (page) => {
     setAnchorElNav(null);
-    console.log(page)
-
-    // navigater(page)
+    const element = document.getElementById(page);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
+
 
 
   return (
@@ -142,9 +133,10 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
+              {pagesObj.map((page) => (
                 <MenuItem sx={{ backgroundColor: "black" }} key={page} onClick={handleCloseNavMenu}>
                   <Typography
+                  onClick={() => handleCloseNavMenu(page.id)}
                     sx={{
                       backgroundColor: "Black", color: "#ffff",
                       fontFamily: 'monospace',
@@ -154,7 +146,7 @@ function ResponsiveAppBar() {
                       fontSize: '17px'
                     }}
                     textAlign="center">
-                    {page}
+                    {page.name}
                   </Typography>
                 </MenuItem>
               ))}
@@ -165,15 +157,19 @@ function ResponsiveAppBar() {
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "center" }}>
             {pagesObj.map((page) => (
+
+
               <Button
                 data-aos="fade" data-aos-easing="linear"
                 data-aos-duration="1500"
                 key={page.id}
                 onClick={() => handleCloseNavMenu(page.id)}
+                className={`${active === page.id && "activeColor"}`}
                 sx={{ my: 2, color: 'white', marginLeft: "20px", marginRight: "20px", display: 'block' }}
               >
                 {page.name}
               </Button>
+
             ))}
           </Box>
         </Toolbar>
