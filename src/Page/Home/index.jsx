@@ -23,7 +23,7 @@ function Home() {
       <ResponsiveAppBar />
 
 
-      <div className='HeroMin scroll-div' id='hero'>
+      <div className='HeroMin scroll-div' id='home'>
         <Hero />
       </div>
       <div className='statusBand'>
@@ -71,7 +71,7 @@ function Home() {
           <h1>Efficient Process <span className="blue-text">+</span> The Right People <span className="blue-text">=</span> Accelerated Profits</h1>
         </div>
       </div>
-      <div className="mainContact">
+      <div className="mainContact scroll-div" id="contact-us">
         <ContactUs />
       </div>
       <div className='bannarSection'>

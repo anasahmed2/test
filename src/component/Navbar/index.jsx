@@ -19,19 +19,19 @@ import { NavLink } from "react-router-dom";
 // pages
 const pages = ['home', 'how it Works', 'Who we serve', 'What we Offer', 'Contact Us'];
 const pagesObj = [
-  { id: "hero", name: "Hero" },
+  { id: "home", name: "home" },
   { id: 'how-it-Works', name: 'how it Works' },
   { id: 'what-we-Offer', name: 'What we Offer' },
   { id: 'who-we-serve', name: 'Who we serve' },
-  { id: 'contact Us', name: 'Contact Us' }];
+  { id: 'contact-us', name: 'Contact Us' }];
 
 function ResponsiveAppBar() {
   const [barColor, setBarColor] = useState(false)
   const [anchorElNav, setAnchorElNav] = useState(null);
-  const [active, setActive] = useState("hero")
+  const [active, setActive] = useState("home")
 
   const handleNavColor = () => {
-    const div = document.getElementById("hero")
+    const div = document.getElementById("home")
     const rect = div.getBoundingClientRect().bottom
     let rectRound = Math.round(rect / 27)
     if (rectRound < 20) {
